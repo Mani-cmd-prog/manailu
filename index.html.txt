@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ManaIllu</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 22px;
+    color: #2e8b57;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #256d46;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>ManaIllu</h1>
+    <p>Fresh & Quality Products Delivered to Your Doorstep</p>
+</header>
+
+<section class="hero">
+    <h2>Choose Your Quantity</h2>
+    <p>Select the size that fits your needs</p>
+</section>
+
+<section class="products">
+    <div class="card">
+        <h3>½ KG Pack</h3>
+        <p class="price">₹ ---</p>
+        <button onclick="orderNow('Half KG')">Order Now</button>
+    </div>
+
+    <div class="card">
+        <h3>1 KG Pack</h3>
+        <p class="price">₹ ---</p>
+        <button onclick="orderNow('1 KG')">Order Now</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 ManaIllu | All Rights Reserved</p>
+</footer>
+
+<script>
+function orderNow(size) {
+    alert("Thank you for choosing " + size + " pack. We will contact you soon!");
+}
+</script>
+
+</body>
+</html>
